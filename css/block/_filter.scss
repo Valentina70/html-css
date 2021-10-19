@@ -71,9 +71,11 @@
     position: relative;
     display: flex;
 
+    & ::-webkit-details-marker {display: none};
 }
 .assortment-block__title {
     margin-bottom: 5px;
+    display: block;
 }
 .assortment-block__img {
     margin-left: 10px;
@@ -90,12 +92,13 @@
     padding: 7px 9px 0 9px;
     right: -16px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &__item {
+        margin-bottom: 6px;
+        display: inline-block;
+    }
 }
-.assortment-block__item ::-webkit-details-marker {display: none};
-.assortment-block__title {
-    display: block;
-}
-.assortment-content__item {
-    margin-bottom: 6px;
-    display: inline-block;
-}
+
+
+
+
