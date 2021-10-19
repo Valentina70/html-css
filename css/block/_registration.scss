@@ -1,0 +1,102 @@
+.registration-wrap {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+.registration-form {
+    width: 360px;
+    margin-right: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    &-customer {
+        height: 197px;
+        border: none;
+        margin-bottom: 35px;
+    }
+    &-info {
+        height: 197px;
+        border: none;
+        margin-bottom: 39px;
+    }
+}
+.legend-form {
+    @include main-text();
+    font-weight: 300;
+    color: $main-black;
+    margin-bottom: 20px;
+}
+.form-field {
+    width: 360px;
+    padding: 16px;
+    @include text-field();
+    color: $main-dark;
+    
+    border: 1px solid $btn-grey;
+
+    &-distance {
+        margin-bottom: 20px;
+    }
+    &::placeholder {
+        @include text-field();
+        color: $btn-form;
+    }
+    &-name {
+        margin-bottom: 31px;
+    }
+    &-passw {
+        margin-bottom: 15px;
+    }
+}
+
+.label, .form-label {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: $deep-black;
+    margin-right: 20px;
+}
+.text-form {
+    @include text-field();
+    color: $btn-form;   
+}
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-color;
+    border: none;
+    padding: 16px 29px;
+    font-weight: normal;
+    @include main-font();
+    color: $main-grey;
+        &:hover {
+            background-color: #d4263d;
+        }
+        &-img {
+            margin-left: 20px;
+        }
+}
+.registration-right-heading {
+    @include text-registration;
+    margin-bottom: 22px;
+}
+.registration-right-text {
+    @include text-registration;
+    margin-bottom: 21px;
+}
+.registration-right-list {
+    list-style: none;
+}
+.registration-right-item {
+    @include text-registration;
+    margin-bottom: 16px;
+    display: flex
+}
+.registration-right-img {
+    margin-right: 22px;
+}
+

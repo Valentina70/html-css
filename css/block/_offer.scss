@@ -1,0 +1,35 @@
+.offer {
+    background-color: #F1E4E6;
+}
+.offer-wrap {
+    min-height: 765px;
+    background-image: url(../img/person.png);
+    background-size: contain;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.offer-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    color: $main-black;
+    border-left: 12px solid $main-color;
+    padding-left: 16px;
+    margin-right: 90px;
+
+    &-small {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $main-black;
+    }
+    &-pink {
+        color: $main-color;
+    }
+}
+
+    

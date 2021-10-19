@@ -1,0 +1,107 @@
+.feature-products-wrap {
+    margin-bottom: 96px;
+} 
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+.feature-head {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: $main-black;
+    margin-bottom: 6px;
+}
+.feature-text {
+    font-weight: normal;
+    @include main-font();
+    color: #9F9F9F;
+}
+.feature-cards {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 48px; 
+}
+.feature-card {
+    width: 360px;
+    height: 582px;
+    background: #F8F8F8;
+    position: relative;
+    transition: 0.4s;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    opacity: 0;
+    transition: 0.4s;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card:hover .overlay {
+    opacity: 1;
+}
+.overlay__btn {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    color: $main-grey;
+    @include main-font();
+    border: 1px solid $main-grey;
+    padding: 13px 16px 13px 13px;
+    background-color: transparent;
+}
+.overlay__img {
+    margin-right: 11px;
+}
+.product-text {
+    padding: 0 29px 20px 17px;
+}
+.card-head {
+    margin: 24px 0 12px 0;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;   
+    color: $deep-black;
+}   
+.card-text {
+    font-weight: 300;
+    @include main-font();
+    color: #5D5D5D;
+    margin-bottom: 18px;
+}
+.card-price {
+    font-weight: normal;
+    @include main-text();
+    color: $main-color;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-link {
+    text-decoration: none;
+    border: 1px solid $btn-border;
+    @include main-text();
+    color: $btn-text;
+    padding: 15px 40px;
+}
+.feature-shift {
+    margin-bottom: 128px;
+}  

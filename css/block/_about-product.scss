@@ -1,0 +1,121 @@
+.slider {
+	background-color: #F7F7F7;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+    padding-top: 10.5px;
+	padding-bottom: $shift;
+    transition: 0.3s;
+	
+		&__img {
+			background-color: #F7F7F7;
+		}
+	
+		&__btn {
+		background-color: rgba(42, 42, 42, 0.15);
+		color: $deep-black;
+		padding: 12.65px 17.3px;
+		border: none;
+        transition: 0.3s;
+		
+			&:hover {
+				fill: $main-color;
+			}
+			&:active {
+				fill: $main-color;
+			}
+	}
+}
+
+.about-wrap {
+	border: 1px solid #EAEAEA;
+	margin-top: -$shift;
+    margin-bottom: 129px;
+
+    background-color: $main-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 293px;
+    padding-right: 293px;
+}
+.about-product {
+    margin-bottom: 65px;
+}
+.about-order_nav {
+    margin-bottom: 48px;
+    padding-top: 0;
+}
+.about__heading {
+    @include main-font();
+    color: $main-color;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.about__line_small {
+    height: 3px; 
+    background-color: $main-pink;
+    width: 63px;
+    border: none;
+    margin: 0 246px 12px 246px;
+}
+.about__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+.about__text {
+    font-weight: 300;
+    @include main-font();
+    color: #5E5E5E;
+    margin-bottom: 32px;  
+}
+.about__price {
+    font-style: normal;
+    font-weight: 300;
+    @include main-heading();
+    color: $main-pink;
+}
+.about__line_big {
+    height: 1px; 
+    background-color: #EAEAEA;
+    width: 641px;
+    border: none;
+    margin-bottom: 65px;
+}
+
+.about-order_nav {
+    margin-bottom: 48px;
+}
+.about-btn {
+    display: flex;
+    justify-content: center;
+
+    &__order {
+        display: flex;
+        text-align: center;
+        background-color: transparent;
+        color: $btn-text;
+        font-weight: normal;
+        @include main-text();
+        padding: 15px 56px 14px 23px;
+        border: 1px solid $btn-border;
+
+        transition: transform 1s;
+    }
+    &__order:hover {
+        transform: rotateX(360deg);
+    }
+    &__img {
+        margin-right: 23px;
+    }
+}

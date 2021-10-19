@@ -1,0 +1,38 @@
+.assortment {
+    display: flex;
+    justify-content: start;
+    padding-top: 39px;
+    padding-bottom: 64px;  
+}
+.assortment-block {
+    display: flex;
+    justify-content: start;
+
+    &_sort {
+        margin-right: 30px;
+        width: 360px;
+    }
+    &__text {
+    margin-left: 16px;
+    margin-right: 11px;
+    font-weight: 600;
+    @include main-font();
+    color: $deep-black;
+    }
+    &_nav {
+        list-style-type: none;
+        padding-top: 12px;
+
+    }
+    &__item {
+        display: flex;
+        white-space: nowrap;
+        font-weight: normal;
+        @include main-font();
+        color: #6F6E6E;
+        margin-right: 28px;
+    }
+    &__text_nav {
+        margin-right: 10px;
+    }
+}

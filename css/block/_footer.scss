@@ -1,0 +1,45 @@
+.footer {
+    background-color: $main-dark;
+    height: 79px;
+
+    &-wrap {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-left_text {
+        font-weight: normal;
+        @include main-text();
+        color: $light-gray;
+    }
+    &-right-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    &-icons-item {
+        margin-left: 7px;
+        transition: 0.4s;
+        display: inline-block;
+
+        &:hover {
+            transform: scale(1.3);
+
+            .footer-icon-badge {
+            fill: $main-color;
+            }
+            .footer-icon-symbol {
+            fill: $main-grey;
+            }
+        }
+    }
+    &-icon-badge {
+        transition: 0.4s;
+    }
+    &-icon-symbol {
+        transition: 0.4s;
+    }   
+}
+

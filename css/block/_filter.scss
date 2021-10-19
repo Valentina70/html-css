@@ -1,0 +1,101 @@
+.filter {
+    width: 360px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: $main-grey;
+
+    & ::-webkit-details-marker {display: none};
+    &[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        .filter__sum {
+            color: $main-pink;
+        }
+        .filter__img {
+            fill: $main-pink;
+        }
+    }
+    &__sum {
+        display: block;
+        margin-right: 11px;
+        padding: 13px 0 0 16px;
+        font-weight: 600;
+        @include main-font();
+        color: $deep-black;
+    }
+    &__img {
+        margin-left: 11px;
+    }  
+    &-content {
+        position: absolute;
+        width: 360px;
+        padding: 16px 16px 0;
+        background-color: $main-grey;
+        border: none;
+        outline: none;
+        z-index: 2;
+        box-shadow: 6px 15px 15px rgba(0, 0, 0, 0.21);
+    }
+    &-title {
+        margin-bottom: 18px;
+    
+        &__sum {
+            display: block;
+            border-left: 5px solid $main-pink;
+            border-bottom: 1px solid #EBEBEB;
+            padding: 11px;
+            color: #6F6E6E;
+            @include main-font();
+        }
+        &[open]>&__sum {
+            color: $main-pink;
+        }
+    }
+    &-list {
+        list-style-type: none;
+        padding: 20px 16px 0;
+
+    
+        &__item {
+            margin-bottom: 11px;
+            
+        }
+        &__link {
+            text-decoration: none;
+            color: #6F6E6E;
+            @include main-font();
+        }
+    }
+}
+
+.assortment-block__item {
+    position: relative;
+    display: flex;
+
+}
+.assortment-block__title {
+    margin-bottom: 5px;
+}
+.assortment-block__img {
+    margin-left: 10px;
+}
+.assortment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $main-grey;
+    position: absolute;
+    z-index: 2;
+    width: 79px;
+    background-color: $main-grey;
+    padding: 7px 9px 0 9px;
+    right: -16px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.assortment-block__item ::-webkit-details-marker {display: none};
+.assortment-block__title {
+    display: block;
+}
+.assortment-content__item {
+    margin-bottom: 6px;
+    display: inline-block;
+}

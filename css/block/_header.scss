@@ -1,0 +1,48 @@
+.header {
+    background: $main-black;
+    padding: 18px 0;
+    color: aliceblue;
+    position: relative;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-logo-link {
+    text-decoration: none;
+    color: $main-icons;
+    margin-right: 41px;
+}
+.header-search, .header-menu {
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+.header-search__img, .header-menu__img, .header-account-link__img, .header-cart-link__img {
+    fill: $main-icons;
+    transition: 0.3s;
+}
+.header-search:hover>.header-search__img {
+    fill: $main-color;
+}
+.header-menu:hover>.header-menu__img {
+    fill: $main-color;
+}
+.header-account-link, .header-cart-link {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.header-account-link {
+    margin: 0 33px;
+}
+.header-account-link:hover>.header-account-link__img {
+    fill: $main-color;
+}
+.header-cart-link:hover>.header-cart-link__img {
+    fill: $main-color;
+}

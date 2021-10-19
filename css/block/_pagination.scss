@@ -1,0 +1,34 @@
+.pagination {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EBEBEB;
+    padding: 15px;
+}
+
+.page-link {
+    font-style: normal;
+    font-weight: 300;
+    @include main-text();
+    color: #C4C4C4;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+}
+.start-page {
+    margin-left: 0;
+}
+.number-one {
+    color: $main-pink;
+}
+.number-prelast{
+    margin-right: 0;
+}
+.number-last {
+    margin-left: 0;
+}
+.decor-pag {
+    margin-left: 0;
+    font-weight: 300;
+    @include main-text();
+}
