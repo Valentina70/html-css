@@ -1,4 +1,5 @@
 .slider {
+    outline: 1px solid red;
 	background-color: #F7F7F7;
 	width: 100%;
 	display: flex;
@@ -30,7 +31,7 @@
 }
 
 .about-wrap {
-	border: 1px solid #EAEAEA;
+	outline: 1px solid red;
 	margin-top: -$shift;
     margin-bottom: 129px;
 
@@ -42,11 +43,11 @@
 
     padding-top: 65px;
     padding-bottom: 65px;
-    padding-left: 293px;
-    padding-right: 293px;
 }
 .about-product {
     margin-bottom: 65px;
+    padding-left: 293px;
+    padding-right: 293px;
 }
 .about-order_nav {
     margin-bottom: 48px;
