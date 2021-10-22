@@ -1205,7 +1205,8 @@ body {
 
 /*регистрация*/
 .registration-wrap {
-  max-width: 100%;
+  outline: 1px solid red;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1214,11 +1215,11 @@ body {
           justify-content: space-between;
   padding-top: 64px;
   padding-bottom: 96px;
+  gap: 128px;
 }
 
 .registration-form {
   width: 360px;
-  margin-right: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1308,6 +1309,10 @@ body {
   margin-right: 20px;
 }
 
+.form-label-adapt {
+  display: none;
+}
+
 .text-form {
   font-weight: 300;
   font-size: 13px;
@@ -1364,18 +1369,18 @@ body {
 }
 
 .registration-right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.registration-right-item__text {
+  padding-left: 23px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.registration-right-img {
-  margin-right: 22px;
 }
 
 /*преимущества*/
@@ -1802,6 +1807,41 @@ form {
   .order-result {
     margin-top: 39px;
   }
+  .registration-wrap {
+    outline: 1px solid red;
+    width: 100%;
+    padding-top: 40px;
+    gap: 22px;
+  }
+  .form-label-adapt {
+    display: inline-block;
+  }
+  .registration-right-heading {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+  .registration-right-text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 22px;
+  }
+  .registration-right-item {
+    margin-bottom: 26px;
+  }
+  .registration-right-item__text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #000000;
+  }
   .advantages {
     min-height: 610px;
   }
@@ -1885,7 +1925,7 @@ form {
     padding-top: 24px;
     padding-bottom: 46px;
   }
-  .page-title-wrap-cart {
+  .page-title-wrap-centr {
     padding-top: 50px;
     padding-bottom: 69px;
   }
@@ -2074,6 +2114,15 @@ form {
   }
   .order-result {
     margin-top: 0;
+  }
+  .registration-wrap {
+    padding-top: 40px;
+    padding-bottom: 85px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
   }
   .advantages-block:last-child {
     margin-bottom: 81px;

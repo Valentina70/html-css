@@ -222,6 +222,35 @@ body {
     .order-result {
         margin-top: 39px;
     }
+    .registration-wrap {
+        outline: 1px solid red;
+        width: 100%;
+        padding-top: 40px;
+        gap: 22px;
+    }
+    .form-label-adapt {
+        display: inline-block;
+    }
+    .registration-right-heading {
+        @include main-text();
+        font-weight: 300;
+        color: $deep-black;
+        margin-bottom: 32px;
+    }
+    .registration-right-text {
+        @include main-text();
+        font-weight: 300;
+        color: $deep-black;
+        margin-bottom: 22px;
+    }
+    .registration-right-item {
+        margin-bottom: 26px;
+    }
+    .registration-right-item__text {
+        @include main-text();
+        font-weight: 300;
+        color: $deep-black;
+    }
     .advantages {
         min-height: 610px;
     
@@ -290,7 +319,7 @@ body {
         padding-top: 24px;
         padding-bottom: 46px;
     }
-    .page-title-wrap-cart {
+    .page-title-wrap-centr {
         padding-top: 50px;
         padding-bottom: 69px;
     }
@@ -469,6 +498,12 @@ body {
     .order-result {
         margin-top: 0;
     }
+    .registration-wrap {
+        padding-top: 40px;
+        padding-bottom: 85px;
+        flex-direction: column;
+        gap: 40px;
+    }
     .advantages-block:last-child {
         margin-bottom: 81px;
     }
@@ -512,3 +547,8 @@ body {
         }
     }
 }
+
+
+
+
+
