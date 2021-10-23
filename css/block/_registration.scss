@@ -1,13 +1,13 @@
 .registration-wrap {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 64px;
     padding-bottom: 96px;
+    gap: 128px;
 }
 .registration-form {
     width: 360px;
-    margin-right: 128px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -59,6 +59,9 @@
     color: $deep-black;
     margin-right: 20px;
 }
+.form-label-adapt {
+    display: none;
+}
 .text-form {
     @include text-field();
     color: $btn-form;   
@@ -92,11 +95,13 @@
     list-style: none;
 }
 .registration-right-item {
-    @include text-registration;
+    display: flex;
     margin-bottom: 16px;
-    display: flex
+    
 }
-.registration-right-img {
-    margin-right: 22px;
+.registration-right-item__text {
+    padding-left: 23px;
+    @include text-registration;
 }
+
 

@@ -69,18 +69,22 @@ form {
     font-weight: normal;
     display: flex;
     align-items: center;
+    transition: 0.3s;
 
     &:hover {
         background-color: #E9E9E9;
+        transition: 0.3s;
     }
     &:focus {
         outline: none;
         border: 1px solid red;
+        transition: 0.3s;
     }
     &::placeholder {
         @include main-font();
         color: $main-dark;
         opacity: 0.67;
+        transition: 0.3s;
     }
 }
 .subscribe-btn {
@@ -91,8 +95,10 @@ form {
     font-weight: normal;
     @include main-font();
     color: $main-grey;
+    transition: 0.3s;
 
     &:hover {
         background-color: #d4263d;
+        transition: 0.3s;
     }
 }

@@ -11,14 +11,14 @@
     &-open {
      display: block;
     }
-     &-close {
+    &-close {
          display: none;
     }
-     &-box {
+    &-box {
          position: relative;
          transition: 0.4s;
     }
-     &-close-btn {
+    &-close-btn {
          position: absolute;
          padding: 10px;
          top: -27px;

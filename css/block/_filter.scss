@@ -1,11 +1,13 @@
 .filter {
-    width: 360px;
+    max-width: 360px;
     box-sizing: border-box;
     position: relative;
     background-color: $main-grey;
+    z-index: 1;
 
     & ::-webkit-details-marker {display: none};
     &[open] {
+        width: 360px;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         .filter__sum {
             color: $main-pink;
@@ -32,7 +34,7 @@
         background-color: $main-grey;
         border: none;
         outline: none;
-        z-index: 2;
+        z-index: 1;
         box-shadow: 6px 15px 15px rgba(0, 0, 0, 0.21);
     }
     &-title {
@@ -71,9 +73,11 @@
     position: relative;
     display: flex;
 
+    & ::-webkit-details-marker {display: none};
 }
 .assortment-block__title {
     margin-bottom: 5px;
+    display: block;
 }
 .assortment-block__img {
     margin-left: 10px;
@@ -90,12 +94,13 @@
     padding: 7px 9px 0 9px;
     right: -16px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &__item {
+        margin-bottom: 6px;
+        display: inline-block;
+    }
 }
-.assortment-block__item ::-webkit-details-marker {display: none};
-.assortment-block__title {
-    display: block;
-}
-.assortment-content__item {
-    margin-bottom: 6px;
-    display: inline-block;
-}
+
+
+
+

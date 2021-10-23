@@ -1,7 +1,6 @@
 .cart-wrap {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
 }
 .cart-order {
     width: 652px;
@@ -11,12 +10,13 @@
 
     &__item {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+       
         height: 306px;
         width: 100%;
         background-color: $main-grey;  
         box-shadow: 25px 25px 20px -5px rgba(0, 0, 0, 0.15);
+        position: relative;
+        transition: 0.4s;
     }
     &__item_one {
         margin-bottom: 40px;
@@ -24,19 +24,31 @@
     &__item_two {
         margin-bottom: 72px;
     }
+    &-close-btn {
+        position: absolute;
+        padding: 5px;
+        top: 20px;
+        right: 18px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        transition: 0.3s;
+     
+        &:hover {
+             background-color: $main-color;
+             transition: 0.3s;
+        }
+    }
     &__img {
         height: 306px;
         width: 262px;
     }
     &__info {
-        padding: 22px 0 62px;
-        width: 195px;
-        height: 222px;
-        margin-right: 100px;
-        margin-left: 32px;
+        padding: 22px 0 22px 32px;
+        height: 212px;
     }
     &__heading {
-        width: 100%;
+        width: 190px;
         @include main-heading();
         color: $main-dark;
         font-weight: normal;
@@ -69,13 +81,12 @@
         line-height: 22px;
         color: #656565;
     }
-    &__close {
-        padding: 1.5em;
-    }
 }
 .cart-block {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    padding-top: 113px;
+    width: 360px;
+    margin-bottom: 128px;
 }
 .cart-order__buttons {
     display: flex;
@@ -88,10 +99,12 @@
     color: $deep-black;
     border: 1px solid $btn-grey;
     background-color: transparent;
+    transition: 0.3s;
 }
-.cart-block {
-    padding-top: 113px;
-    width: 360px;
+.cart-order__btn:hover {
+    color: $light-gray;
+    background-color: rgb(156, 154, 154);
+    transition: 0.3s;
 }
 .cart-form {
     display: flex;
@@ -102,7 +115,6 @@
 
     &-customer {
         border: none;
-        margin-bottom: 23px;
     }
     &__btn {
         font-weight: 300;
@@ -112,6 +124,13 @@
         padding: 12px 15px 10px;
         background-color: $main-grey;
         border: 1px solid $btn-grey;
+        transition: 0.3s;
+        
+        &:hover {
+            color: $main-dark;
+            background-color: $btn-grey;
+            transition: 0.3s;
+        }
     }
 }
 .order-result {
