@@ -105,6 +105,12 @@
     @include main-text();
     color: $btn-text;
     padding: 15px 40px;
+    transition: 0.3s;
+}
+.feature-link:hover {
+    color: $main-grey;
+    background-color: $main-color;
+    transition: 0.3s;
 }
 .feature-shift {
     margin-bottom: 128px;

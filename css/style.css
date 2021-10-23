@@ -239,7 +239,6 @@ body {
 }
 
 .page-title-wrap {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,6 +536,15 @@ body {
   line-height: 19px;
   color: #F26376;
   padding: 15px 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.feature-link:hover {
+  color: #ffffff;
+  background-color: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .feature-shift {
@@ -603,11 +611,12 @@ body {
 
 /*фильтр и списки в каталоге, выпадающие*/
 .filter {
-  width: 360px;
+  max-width: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .filter ::-webkit-details-marker {
@@ -615,6 +624,7 @@ body {
 }
 
 .filter[open] {
+  width: 360px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -649,7 +659,7 @@ body {
   background-color: #ffffff;
   border: none;
   outline: none;
-  z-index: 2;
+  z-index: 1;
   -webkit-box-shadow: 6px 15px 15px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 15px 15px rgba(0, 0, 0, 0.21);
 }
@@ -791,9 +801,17 @@ body {
 /*слайдер-блок на product*/
 /*блок фильтр*/
 .slider {
-  outline: 1px solid red;
   background-color: #F7F7F7;
-  width: 100%;
+}
+
+.slider-wrap {
+  max-width: 100%;
+  height: 777px;
+  background-image: url(../img/product-girl.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,14 +821,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10.5px;
   padding-bottom: 63px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.slider__img {
-  background-color: #F7F7F7;
 }
 
 .slider__btn {
@@ -824,16 +837,20 @@ body {
 
 .slider__btn:hover {
   fill: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .slider__btn:active {
   fill: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .about-wrap {
-  outline: 1px solid red;
   margin-top: -63px;
   margin-bottom: 129px;
+  outline: 1px solid #EAEAEA;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,8 +869,9 @@ body {
 
 .about-product {
   margin-bottom: 65px;
-  padding-left: 293px;
-  padding-right: 293px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-order_nav {
@@ -875,7 +893,9 @@ body {
   background-color: #EF5B70;
   width: 63px;
   border: none;
-  margin: 0 246px 12px 246px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
 }
 
 .about__title {
@@ -888,6 +908,7 @@ body {
 }
 
 .about__text {
+  max-width: 555px;
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
@@ -910,6 +931,8 @@ body {
   background-color: #EAEAEA;
   width: 641px;
   border: none;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 65px;
 }
 
@@ -957,7 +980,6 @@ body {
 /*корзина*/
 /*форма со страницы регистрации*/
 .cart-wrap {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,12 +1025,14 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cart-order-close-btn:hover {
   background-color: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cart-order__img {
@@ -1092,6 +1116,15 @@ body {
   color: #000000;
   border: 1px solid #A4A4A4;
   background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cart-order__btn:hover {
+  color: #FBFBFB;
+  background-color: #9c9a9a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cart-form {
@@ -1119,6 +1152,15 @@ body {
   padding: 12px 15px 10px;
   background-color: #ffffff;
   border: 1px solid #A4A4A4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cart-form__btn:hover {
+  color: #222224;
+  background-color: #A4A4A4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .order-result {
@@ -1205,7 +1247,6 @@ body {
 
 /*регистрация*/
 .registration-wrap {
-  outline: 1px solid red;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1532,15 +1573,21 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field:hover {
   background-color: #E9E9E9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field:focus {
   outline: none;
   border: 1px solid red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field::-webkit-input-placeholder {
@@ -1549,6 +1596,8 @@ form {
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field:-ms-input-placeholder {
@@ -1557,6 +1606,8 @@ form {
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field::-ms-input-placeholder {
@@ -1565,6 +1616,8 @@ form {
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field::placeholder {
@@ -1573,6 +1626,8 @@ form {
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-btn {
@@ -1585,10 +1640,14 @@ form {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-btn:hover {
   background-color: #d4263d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /*footer*/
@@ -1666,7 +1725,6 @@ form {
     max-width: 736px;
   }
   .offer-wrap {
-    outline: 1px solid red;
     min-height: 368px;
     background-position-x: -30px;
     padding: 0 10px;
@@ -1683,20 +1741,14 @@ form {
   .assortment-block__item:last-child {
     margin-right: 5px;
   }
-  .slider {
-    outline: 1px solid red;
-    min-height: 624px;
-    padding-top: 29px;
-    padding-bottom: 29px;
-  }
-  .slider__img {
-    width: 466px;
-    height: 565px;
+  .slider-wrap {
+    height: 624px;
+    background-position-y: center;
   }
   .about-wrap {
-    outline: 1px solid red;
     margin-top: 0;
-    max-width: 1200px;
+    min-width: 768px;
+    max-width: 100%;
   }
   .categories {
     padding-top: 20px;
@@ -1704,7 +1756,6 @@ form {
   }
   .categories-wrap {
     gap: 19px;
-    outline: 1px solid red;
   }
   .categories-item {
     width: 232px;
@@ -1715,7 +1766,6 @@ form {
     width: 100%;
   }
   .feature-products-wrap {
-    outline: 1px solid red;
     margin-bottom: 65px;
   }
   .feature-product-shift {
@@ -1738,7 +1788,6 @@ form {
     margin-bottom: 40px;
   }
   .assortment {
-    outline: 1px solid red;
     padding-top: 24px;
     padding-bottom: 40px;
     -webkit-box-pack: justify;
@@ -1808,7 +1857,6 @@ form {
     margin-top: 39px;
   }
   .registration-wrap {
-    outline: 1px solid red;
     width: 100%;
     padding-top: 40px;
     gap: 22px;
@@ -1846,7 +1894,6 @@ form {
     min-height: 610px;
   }
   .advantages-wrap {
-    outline: 1px solid red;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1867,7 +1914,6 @@ form {
     background-position-x: -360px;
   }
   .feedback-wrap {
-    outline: 1px solid red;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1929,6 +1975,11 @@ form {
     padding-top: 50px;
     padding-bottom: 69px;
   }
+  .filter[open] {
+    width: 360px;
+    z-index: 3;
+    position: absolute;
+  }
   .filter__sum {
     padding: 13px 0 0 0;
   }
@@ -1944,10 +1995,10 @@ form {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
   }
   .assortment-block_sort {
     margin-right: 0;
-    width: 80px;
   }
   .assortment-block_nav {
     margin-right: 5px;
@@ -1964,33 +2015,31 @@ form {
   .breadcrumb {
     margin-right: 0;
   }
-  .slider {
-    padding-top: 85px;
-    padding-bottom: 85px;
-    /* background-image: url(../img/product-girl.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;*/
-  }
-  .slider-box {
-    width: 100%;
+  .slider-wrap {
+    height: 624px;
+    background-position-y: center;
   }
   .about-wrap {
+    min-width: 375px;
+    max-width: 100%;
     margin-bottom: 64px;
   }
   .about-product {
     margin-bottom: 32px;
   }
   .about__text {
+    min-width: 326px;
+    font-size: 14px;
     line-height: 20px;
     margin-right: 24px;
     margin-left: 24px;
   }
-  .about__line_small {
-    margin: 0 156px 12px 156px;
+  .about__title {
+    margin-bottom: 32px;
   }
   .about__line_big {
     width: 175px;
+    margin-bottom: 49px;
   }
   .about-order_nav {
     margin-bottom: 64px;
@@ -2027,6 +2076,9 @@ form {
             justify-content: center;
   }
   .feature-products-catalog {
+    margin-bottom: 65px;
+  }
+  .feature-product-shift {
     margin-bottom: 65px;
   }
   .cart-order {

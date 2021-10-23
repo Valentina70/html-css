@@ -1,39 +1,43 @@
 .slider {
-    outline: 1px solid red;
 	background-color: #F7F7F7;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	
+        &-wrap {
+            max-width: 100%;
+            height: 777px;
+            background-image: url(../img/product-girl.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: -20px;
+           
 
-    padding-top: 10.5px;
-	padding-bottom: $shift;
-    transition: 0.3s;
-	
-		&__img {
-			background-color: #F7F7F7;
-		}
-	
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: $shift;
+            transition: 0.3s;
+        }
 		&__btn {
-		background-color: rgba(42, 42, 42, 0.15);
-		color: $deep-black;
-		padding: 12.65px 17.3px;
-		border: none;
-        transition: 0.3s;
+            background-color: rgba(42, 42, 42, 0.15);
+            color: $deep-black;
+            padding: 12.65px 17.3px;
+            border: none;
+            transition: 0.3s;
 		
 			&:hover {
 				fill: $main-color;
+                transition: 0.3s;
 			}
 			&:active {
 				fill: $main-color;
+                transition: 0.3s;
 			}
 	}
 }
-
 .about-wrap {
-	outline: 1px solid red;
 	margin-top: -$shift;
     margin-bottom: 129px;
+    outline: 1px solid #EAEAEA;
 
     background-color: $main-grey;
     display: flex;
@@ -46,8 +50,7 @@
 }
 .about-product {
     margin-bottom: 65px;
-    padding-left: 293px;
-    padding-right: 293px;
+    justify-content: center;
 }
 .about-order_nav {
     margin-bottom: 48px;
@@ -64,7 +67,9 @@
     background-color: $main-pink;
     width: 63px;
     border: none;
-    margin: 0 246px 12px 246px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
 }
 .about__title {
     font-style: normal;
@@ -75,6 +80,7 @@
     margin-bottom: 48px;
 }
 .about__text {
+    max-width: 555px;
     font-weight: 300;
     @include main-font();
     color: #5E5E5E;
@@ -91,6 +97,8 @@
     background-color: #EAEAEA;
     width: 641px;
     border: none;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 65px;
 }
 

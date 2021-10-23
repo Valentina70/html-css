@@ -1,5 +1,4 @@
 .cart-wrap {
-    outline: 1px solid red;
     display: flex;
     justify-content: space-between;
 }
@@ -33,10 +32,11 @@
         background-color: transparent;
         border: none;
         outline: none;
-        transition: 0.4s;
+        transition: 0.3s;
      
         &:hover {
              background-color: $main-color;
+             transition: 0.3s;
         }
     }
     &__img {
@@ -99,6 +99,12 @@
     color: $deep-black;
     border: 1px solid $btn-grey;
     background-color: transparent;
+    transition: 0.3s;
+}
+.cart-order__btn:hover {
+    color: $light-gray;
+    background-color: rgb(156, 154, 154);
+    transition: 0.3s;
 }
 .cart-form {
     display: flex;
@@ -118,6 +124,13 @@
         padding: 12px 15px 10px;
         background-color: $main-grey;
         border: 1px solid $btn-grey;
+        transition: 0.3s;
+        
+        &:hover {
+            color: $main-dark;
+            background-color: $btn-grey;
+            transition: 0.3s;
+        }
     }
 }
 .order-result {
