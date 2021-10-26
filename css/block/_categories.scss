@@ -1,49 +1,56 @@
 .categories {
     padding-top: 65px;
     padding-bottom: 95px;
-}
-.categories-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-}
-.categories-item {
-    background: #C4C4C4;
-    height: 260px;
-    width: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    background-size: 100%;
-    background-repeat: no-repeat;
 
-    &-women {
-        background: url(../img/dark.png), url(../img/women.png);
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
     }
-    &-men {
-        background-image: url(../img/dark.png), url(../img/men.png);
+    &-item {
+        background: #C4C4C4;
+        height: 260px;
+        width: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        &-women {
+            background: url(../img/dark.png), url(../img/women.png);
+        }
+        &-men {
+            background-image: url(../img/dark.png), url(../img/men.png);
+        }
+        &-kids {
+            background-image: url(../img/dark.png), url(../img/kids.png);
+        }
+        &-acc {
+            width: 100%;
+            height: 180px;
+            background-image: url(../img/dark.png), url(../img/acces.png);
+        }
     }
-    &-kids {
-        background-image: url(../img/dark.png), url(../img/kids.png);
+    &-sale {
+        font-weight: normal;
+        @include main-text();
+        text-align: center;
+        color: $main-grey;
     }
-    &-acc {
-        width: 100%;
-        height: 180px;
-        background-image: url(../img/dark.png), url(../img/acces.png);
+    &-name {
+        font-weight: bold;
+        @include main-heading();
+        color: $main-color;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            color: #d4263d;
+            transition: 0.3s;
+        }
     }
-}
-.categories-sale {
-    font-weight: normal;
-    @include main-text();
-    text-align: center;
-    color: $main-grey;
-}
-.categories-name {
-    font-weight: bold;
-    @include main-heading();
-    color: $main-color;
-    text-align: center;
 }
