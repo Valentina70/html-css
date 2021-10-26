@@ -18,6 +18,10 @@
     color: $main-icons;
     margin-right: 41px;
 }
+.header-logo-link:hover>.header-logo {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
 .header-search, .header-menu {
     background-color: transparent;
     border: none;
@@ -29,9 +33,11 @@
 }
 .header-search:hover>.header-search__img {
     fill: $main-color;
+    transform: scale(1.3);
 }
 .header-menu:hover>.header-menu__img {
     fill: $main-color;
+    transform: scale(1.3)
 }
 .header-account-link, .header-cart-link {
     text-decoration: none;
@@ -42,7 +48,9 @@
 }
 .header-account-link:hover>.header-account-link__img {
     fill: $main-color;
+    transform: scale(1.3);
 }
 .header-cart-link:hover>.header-cart-link__img {
     fill: $main-color;
+    transform: scale(1.3);
 }

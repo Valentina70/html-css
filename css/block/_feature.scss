@@ -47,43 +47,59 @@
     right: 0;
   
     opacity: 0;
-    transition: 0.4s;;
+    transition: 0.4s;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        color: $main-grey;
+        @include main-font();
+        border: 1px solid $main-grey;
+        padding: 13px 16px 13px 13px;
+        background-color: transparent;
+
+        &:hover {
+            background-color: lightgrey;
+            transition: 0.3s;
+        }
+    }
+    &__img {
+        margin-right: 11px;
+    }
 }
 
 .feature-card:hover .overlay {
     opacity: 1;
 }
-.overlay__btn {
-    display: flex;
-    align-items: center;
-    font-weight: normal;
-    color: $main-grey;
-    @include main-font();
-    border: 1px solid $main-grey;
-    padding: 13px 16px 13px 13px;
-    background-color: transparent;
-}
-.overlay__img {
-    margin-right: 11px;
-}
+
 .product-text {
-    padding: 0 29px 20px 17px;
+    padding: 24px 29px 20px 18px;
+    display: flex;
+    flex-direction: column;
 }
 .card-head {
-    margin: 24px 0 12px 0;
+    text-decoration: none;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;   
     color: $deep-black;
-}   
+
+    &:hover {
+        color: $main-color;
+    }
+}  
+
 .card-text {
+    margin-top: 12px;
     font-weight: 300;
     @include main-font();
     color: #5D5D5D;
     margin-bottom: 18px;
+    flex-grow: 1;
 }
 .card-price {
     font-weight: normal;
@@ -101,7 +117,15 @@
     @include main-text();
     color: $btn-text;
     padding: 15px 40px;
+    transition: 0.3s;
+
+    &:hover {
+        color: $main-grey;
+        background-color: $main-color;
+        transition: 0.3s;
+    }
 }
+
 .feature-shift {
     margin-bottom: 128px;
 }  

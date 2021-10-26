@@ -11,14 +11,14 @@
     &-open {
      display: block;
     }
-     &-close {
+    &-close {
          display: none;
     }
-     &-box {
+    &-box {
          position: relative;
          transition: 0.4s;
     }
-     &-close-btn {
+    &-close-btn {
          position: absolute;
          padding: 10px;
          top: -27px;
@@ -50,7 +50,13 @@
          @include main-font();
          color: $main-color;
          text-transform: uppercase;
-     }
+
+         &:hover {
+             transition: 0.3s;
+             color: #d4263d;
+         }
+     
+   }
 }
  .main-submenu {
      list-style: none;
